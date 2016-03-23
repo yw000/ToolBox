@@ -6,7 +6,7 @@
     <Button
         android:id="@+id/btn1"
         style="@style/btnMain"
-        android:text="Hello World!" />
+        android:text="@string/material_design" />
 
     <Button
         android:id="@+id/btn2"
