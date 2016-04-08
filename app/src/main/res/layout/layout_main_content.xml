@@ -11,12 +11,12 @@
     <Button
         android:id="@+id/btn2"
         style="@style/btnMain"
-        android:text="Hello World!" />
+        android:text="@string/recyclerview" />
 
     <Button
         android:id="@+id/btn3"
         style="@style/btnMain"
-        android:text="Hello World!" />
+        android:text="@string/meituan" />
 
     <Button
         android:id="@+id/btn4"

@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".material.MDdemoActivity"></activity>
+        <activity android:name=".material.MDdemoActivity" />
+        <activity android:name=".recycler.RecyclerViewActivity" />
+        <activity android:name=".common.BaseYangActivity" />
+        <activity android:name=".demo.MeiTuanActivity"></activity>
     </application>
 
 </manifest>
