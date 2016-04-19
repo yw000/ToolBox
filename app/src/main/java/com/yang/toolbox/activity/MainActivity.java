@@ -1,19 +1,17 @@
-package com.yang.toolbox;
+package com.yang.toolbox.activity;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
+import com.yang.toolbox.R;
 import com.yang.toolbox.demo.MeiTuanActivity;
+import com.yang.toolbox.handlerdemo.HandlerDemoActivity;
 import com.yang.toolbox.recycler.RecyclerViewActivity;
-import com.yang.toolbox.util.ToastHelper;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -21,10 +19,6 @@ import butterknife.OnClick;
 import rx.Observable;
 import rx.Observer;
 import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.functions.Func1;
-import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Subscriber subscriber = (Subscriber) observer;
-        subscriber.unsubscribe();
+//        Subscriber subscriber = (Subscriber) observer;
+//        subscriber.unsubscribe();
     }
 
     @OnClick(R.id.btn1)
@@ -90,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @OnClick({R.id.btn2, R.id.btn3})
+    @OnClick({R.id.btn2, R.id.btn3,R.id.btn4})
     public void onClick(View view) {
 
         Intent intent = new Intent();
@@ -100,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn3:
                 intent.setClass(MainActivity.this, MeiTuanActivity.class);
+            case R.id.btn4:
+                intent.setClass(MainActivity.this, HandlerDemoActivity.class);
                 break;
         }
         startActivity(intent);

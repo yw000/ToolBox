@@ -3,4 +3,9 @@
     <string name="material_design">MD Demo</string>
     <string name="recyclerview">自定义RecyclerView</string>
     <string name="meituan">仿美团外卖商品页</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="handler_demo">Handler Demo</string>
 </resources>

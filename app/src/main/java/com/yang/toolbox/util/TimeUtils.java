@@ -37,7 +37,7 @@ public class TimeUtils {
      * 返回当前系统时间
      */
     public static String getDataTime() {
-        return getDataTime("HH:mm");
+        return getDataTime("HH:mm:ss");
     }
     /**
      * 将字符串转位日期类型

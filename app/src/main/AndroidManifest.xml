@@ -6,19 +6,24 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:debuggable="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".material.MDdemoActivity" />
         <activity android:name=".recycler.RecyclerViewActivity" />
-        <activity android:name=".common.BaseYangActivity" />
-        <activity android:name=".demo.MeiTuanActivity"></activity>
+        <activity android:name=".demo.MeiTuanActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".handlerdemo.HandlerDemoActivity"></activity>
     </application>
 
 </manifest>
