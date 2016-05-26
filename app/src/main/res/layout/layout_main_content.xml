@@ -26,7 +26,7 @@
     <Button
         android:id="@+id/btn5"
         style="@style/btnMain"
-        android:text="Hello World!" />
+        android:text="@string/property_anim" />
 
     <Button
         android:id="@+id/btn6"

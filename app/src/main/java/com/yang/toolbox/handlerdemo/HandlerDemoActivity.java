@@ -64,6 +64,7 @@ public class HandlerDemoActivity extends BaseActivity {
 
         @Override
         public void run() {
+
             System.out.println("handler_id---->" + thread.currentThread().getId());
             System.out.println("handler_name---->" + thread.currentThread().getName());
             Message msg = handler.obtainMessage();

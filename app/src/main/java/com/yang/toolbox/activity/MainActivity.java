@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @OnClick({R.id.btn2, R.id.btn3,R.id.btn4})
+    @OnClick({R.id.btn2, R.id.btn3,R.id.btn4,R.id.btn5})
     public void onClick(View view) {
 
         Intent intent = new Intent();
@@ -94,8 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn3:
                 intent.setClass(MainActivity.this, MeiTuanActivity.class);
+                break;
             case R.id.btn4:
                 intent.setClass(MainActivity.this, HandlerDemoActivity.class);
+                break;
+            case R.id.btn5:
+                intent.setClass(MainActivity.this, PropertyAnimationActivity.class);
                 break;
         }
         startActivity(intent);
