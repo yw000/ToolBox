@@ -31,7 +31,7 @@
     <Button
         android:id="@+id/btn6"
         style="@style/btnMain"
-        android:text="Hello World!" />
+        android:text="@string/adil_demo" />
 
     <Button
         android:id="@+id/btn7"

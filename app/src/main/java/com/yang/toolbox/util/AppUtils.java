@@ -1,5 +1,6 @@
 package com.yang.toolbox.util;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -54,6 +55,19 @@ public class AppUtils
         } catch (PackageManager.NameNotFoundException e)
         {
             e.printStackTrace();
+        }
+        return null;
+    }
+    public static String getCurProcessName(Context context) {
+        int pid = android.os.Process.myPid();
+        ActivityManager mActivityManager = (ActivityManager) context
+                .getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningAppProcessInfo appProcess : mActivityManager
+                .getRunningAppProcesses()) {
+            if (appProcess.pid == pid) {
+
+                return appProcess.processName;
+            }
         }
         return null;
     }

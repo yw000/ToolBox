@@ -8,10 +8,10 @@ import com.yang.toolbox.util.L;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        L.e("base");
     }
 
     @Override

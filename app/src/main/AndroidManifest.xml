@@ -26,13 +26,14 @@
             android:theme="@style/FullscreenTheme" />
         <activity android:name=".handlerdemo.HandlerDemoActivity" />
 
-        <service android:name=".aidlDemo.MyService">
+        <service android:name=".aidlDemo.MyService" android:process=":remote" >
             <intent-filter>
                 <action android:name="com.yang.toolbox.aidlDemo.IMyService" />
             </intent-filter>
         </service>
 
-        <activity android:name=".activity.PropertyAnimationActivity"></activity>
+        <activity android:name=".activity.PropertyAnimationActivity" />
+        <activity android:name=".activity.MyBookClientActivity"></activity>
     </application>
 
 </manifest>

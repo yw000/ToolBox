@@ -23,15 +23,8 @@ import rx.Subscriber;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "yang";
-
     @InjectView(R.id.toolbar)
     Toolbar toolbar;
-    @InjectView(R.id.btn1)
-    Button btn1;
-    @InjectView(R.id.btn2)
-    Button btn2;
-    @InjectView(R.id.btn3)
-    Button btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @OnClick({R.id.btn2, R.id.btn3,R.id.btn4,R.id.btn5})
+    @OnClick({R.id.btn2, R.id.btn3,R.id.btn4,R.id.btn5,R.id.btn6})
     public void onClick(View view) {
 
         Intent intent = new Intent();
@@ -100,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn5:
                 intent.setClass(MainActivity.this, PropertyAnimationActivity.class);
+                break;
+            case R.id.btn6:
+                intent.setClass(MainActivity.this, MyBookClientActivity.class);
                 break;
         }
         startActivity(intent);
